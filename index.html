@@ -1,5 +1,6 @@
 <!doctype <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,49 +11,113 @@
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <script src="main.js"></script>
 </head>
+
 <body>
+    <div class="column1">
+        <div id="PCmonitorOutside">
+
+            <div id="PCmonitorInside">
+
+                <h2 id="designerName">VT323@PeterHull:~$<span class="blink">_</span></h2>
+                <h3 id="fontClassification">Classification: m o n o s p a c e</h3>
+
+            </div>
+        </div>
+        <div id="triangle-bottomright"></div>
+        <div id="keyboard"></div>
+        <div id="triangle-bottomleft"></div>
+    </div>
 
     <h1 id="fontName">VT323</h1>
-    <h2 id="designerName">VT323@Peter Hull:~$<span class="blink">_</span></h2>
-    <h3 id="fontClassification">Classification: m o n o s p a c e</h3>
-    <div id="letterGroup">
-    <div id="letterForms"> <span>a</span>A 
-        <span>b</span>B 
-        <span>c</span>C 
-        <span>d</span>D 
-        <span>e</span>E 
-        <span>f</span>F 
-        <span>g</span>G 
-        <span>h</span>H 
-        <span>i</span>I 
-        <span>j</span>J 
-        <span>k</span>K 
-        <span>l</span>L 
-        <span>m</span>M 
-        <span>n</span>N 
-        <span>o</span>O 
-        <span>p</span>P 
-        <span>q</span>Q 
-        <span>r</span>R 
-        <span>s</span>S 
-        <span>t</span>T 
-        <span>u</span>U 
-        <span>v</span>V 
-        <span>w</span>W 
-        <span>x</span>X 
-        <span>y</span>Y 
-        <span>z</span>Z 
-        <span></span>0 
-        <span></span>1 
-        <span></span>2 
-        <span></span>3 
-        <span></span>4 
-        <span></span>5 
-        <span></span>6 
-        <span></span>7 
-        <span></span>8 
-        <span></span>9</div>
-</div>
+    <div class="keyboardKeys">
+        <div class="keyboardFirstRow">
+            <span>&#27;</span>
+            <!--left arrow?-->
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>0</span>
+            <span>+</span>
+            <span>-</span>
+            <span>&#163;</span>
+            <!--british pound sign-->
+            <span>Home</span>
+            <span>DEL</span>
+        </div>
+        <div class="keyboardSecondRow">
+            <span>CTRL</span>
+            <span>Q</span>
+            <span>W</span>
+            <span>E</span>
+            <span>R</span>
+            <span>T</span>
+            <span>Y</span>
+            <span>U</span>
+            <span>I</span>
+            <span>O</span>
+            <span>P</span>
+            <span>@</span>
+            <span>&#24;</span>
+            <!--up arrow?-->
+            <span>RESTORE</span>
+        </div>
+        <div class="keyboardThirdRow">
+            <span>RUN</span>
+            <!--STOP below the run-->
+            <span>SHIFT</span>
+            <!--LOCK below the shift-->
+            <span>A</span>
+            <span>S</span>
+            <span>D</span>
+            <span>F</span>
+            <span>G</span>
+            <span>H</span>
+            <span>J</span>
+            <span>K</span>
+            <span>L</span>
+            <span>[</span>
+            <span>]</span>
+            <span>=</span>
+            <span>RETURN</span>
+        </div>
+        <div class="keyboardFourthRow">
+            <span>Shift</span>
+            <span>Z</span>
+            <span>X</span>
+            <span>C</span>
+            <span>V</span>
+            <span>B</span>
+            <span>N</span>
+            <span>M</span>
+            <span>
+                <</span> <span>>
+            </span>
+            <span>?</span>
+            <span>Shift</span>
+            <span>CRSR</span>
+            <!--up arrow above, down arrow below-->
+            <span>CRSR</span>
+            <!--left arrow above, right arrow below-->
+        </div>
+        <div class="keyboardFifthRow">
+
+        </div>
+        <span>SpaceBar</span>
+    </div>
+    <div class="keyboardFkeys">
+        <span>F1</span>
+        <span>F3</span>
+        <span>F5</span>
+        <span>F7</span>
+    </div>
+    <!--
+
     <div id="computer_ASCII">
 
              ________________________________________________
@@ -85,23 +150,35 @@
 `---._.-------------------------------------------------------------._.---'
                               -Roland Hangg-
     </div>
-
+-->
 
     <!--About text from google fonts-->
-    <div class="wrapper">
-    <p>This font was created from the glyphs of the DEC VT320 text terminal, which [Peter Hull] used in college, and for which [Peter Hull has] retained an unaccountable nostalgia.</p>
 
-    <p>[Peter Hull] used a variety of tools, including Gimp, Python/PIL, and of course, FontForge. The VT320 glyphs were designed with a nonrectangular pixel aspect ratio to fit the way the terminal scanned the CRT, so for this VT323 variation [Peter Hull] had Python munge the locations and attempt to emulate the way the electron beam actually illuminated the phosphor and smeared the pixels horizontally on the terminal's CRT, so it looks more like what the actual glyph looked like on the screen. Python then drew the proper pixels into a 1:1 pixel grid as a monochrome PNG, which FontForge autoscanned into outlines. [Peter Hull has] attempted to support most of the glyphs available on the VT320, but that is a limited set to begin with, so please don't be disappointed that [Peter Hull hasn't] supported Esperanto or Riograndenser Hunsrückisch or whatever.</p>
-            
-    <p>There is another earlier variation called "VT321" that uses a more standard 1:1 pixel drawing technique, if you want to grab that as well. [Peter Hull] personally like[d] VT323 better, and actually use[d] it as [his] terminal font when cruising on the command line.</p>
-</div>
+    <p>This font was created from the glyphs of the DEC VT320 text terminal, which [Peter Hull] used in college,
+        and for which [Peter Hull has] retained an unaccountable nostalgia.</p>
 
-<div id="musicIFRAME">
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/9556598&color=%2371c46c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-</div>
-<!-- //commented out until development is over.
+    <p>[Peter Hull] used a variety of tools, including Gimp, Python/PIL, and of course, FontForge. The VT320 glyphs
+        were designed with a nonrectangular pixel aspect ratio to fit the way the terminal scanned the CRT, so for
+        this VT323 variation [Peter Hull] had Python munge the locations and attempt to emulate the way the
+        electron beam actually illuminated the phosphor and smeared the pixels horizontally on the terminal's CRT,
+        so it looks more like what the actual glyph looked like on the screen. Python then drew the proper pixels
+        into a 1:1 pixel grid as a monochrome PNG, which FontForge autoscanned into outlines. [Peter Hull has]
+        attempted to support most of the glyphs available on the VT320, but that is a limited set to begin with, so
+        please don't be disappointed that [Peter Hull hasn't] supported Esperanto or Riograndenser Hunsrückisch or
+        whatever.</p>
+
+    <p>There is another earlier variation called "VT321" that uses a more standard 1:1 pixel drawing technique, if
+        you want to grab that as well. [Peter Hull] personally like[d] VT323 better, and actually use[d] it as
+        [his] terminal font when cruising on the command line.</p>
+
+    </div>
+    <div id="musicIFRAME">
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/9556598&color=%2371c46c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
+    <!-- //commented out until development is over.
 -->
 </body>
+
 </html>
 
 <!--

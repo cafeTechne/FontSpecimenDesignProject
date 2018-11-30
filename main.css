@@ -23,17 +23,18 @@ h1,h2,h3,h4{
     white-space: pre;
 }
 #fontName{
-    font-size: 10rem;
-    display:block;
-    
+    font-size: 6rem;
+    display:inline-block;
     z-index: 3;
     background: black;
 }
 #designerName{
     font-size: 4rem;
+    margin-left: 5px;
 }
 #fontClassification{
     font-size: 2rem;
+    margin-left: 5px;
 }
 
 .blink {
@@ -57,16 +58,7 @@ h1,h2,h3,h4{
   https://codepen.io/alandunning/pen/RWRrEW
   */
 
-  
-  #letterForms span
-  {
-      display: block;
-  }
-  #letterGroup{
-      position: absolute;
-      left: 10;
-      top: 325;
-  }
+
 
 
   @media only screen and (max-width: 900px) {
@@ -74,16 +66,69 @@ h1,h2,h3,h4{
         width: 80%;
         margin: 5% auto;
     }
-    #letterForms 
-    {
-        display: block;
-    }
-    #letterGroup{
-        position: static;
-        text-align: center;
-    
-    }
+
 }
 #musicIFRAME{
     display: block;
+}
+#PCmonitorInside{
+    border: 2px solid rgb(0,166,0);
+    width: 806px;
+    height: 568px;
+    background-color: black;
+    margin: 50px auto;
+    position: relative;
+}
+#PCmonitorOutside{
+    border: 2px solid rgb(0,166,0);
+    width: 967px;
+    height: 682px;
+    background-color: black;
+    margin: auto auto auto 10px;
+    display: inline-block;
+}
+.row {
+    display: flex;
+}
+
+.column1 {
+    flex: 80%;
+}
+.column2 {
+    flex: 20%;
+}
+#keyboard{
+    border-top: solid rgb(0,166,0) 2px;
+    border-bottom: solid rgb(0,166,0) 2px;
+    height : 400px;
+    width: 967px;
+    margin: 50px auto auto 10px;
+    display: inline-block;
+}
+#triangle-bottomright { 
+    width: 0; 
+    height: 0; 
+    margin: 0;
+    padding: 0;
+    border-bottom: 100px solid rgb(0,166,0); 
+    border-left: 100px solid transparent; 
+    left: 5;
+    top: 999;
+    display: absolute;
+    position: absolute;
+    transform: scale(.125, 4.1);
+}
+#triangle-bottomleft { 
+    width: 0; 
+    height: 0; 
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    border-bottom: 100px solid rgb(0,166,0); 
+    border-right: 100px solid transparent; 
+    display: absolute;
+    position: absolute;
+    left: 1038;
+    top: 999;
+    transform: scale(.125, 4.1);
 }
