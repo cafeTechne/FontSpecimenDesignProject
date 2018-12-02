@@ -1,114 +1,264 @@
-body{
+body {
     font-family: 'VT323', monospace;
     font-size: 3rem;
-    color: rgb(0,166,0);
+    color: rgb(0, 166, 0);
     background-color: black;
     font-weight: normal;
     font-style: normal;
 }
-h1,h2,h3,h4{
+
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
     padding: 0;
     font-weight: normal;
     font-style: normal;
 }
-.wrapper{
-    width: 60%;
-    margin: 5% auto;
-}
-#computer_ASCII{
+
+#computer_ASCII {
     font-size: .75rem;
     width: 500px;
     margin: 0 auto;
     white-space: pre;
 }
-#fontName{
-    font-size: 6rem;
-    display:inline-block;
+
+#fontName {
+    font-size: 20rem;
+    display: inline-block;
     z-index: 3;
     background: black;
 }
-#designerName{
+
+#designerName {
     font-size: 4rem;
     margin-left: 5px;
 }
-#fontClassification{
+
+#fontClassification {
     font-size: 2rem;
     margin-left: 5px;
 }
 
 .blink {
     animation: blink 1s step-end infinite;
-  }
-  
-  @-webkit-keyframes blink {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
-  
-  @keyframes blink {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
-  /*
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+/*
   inspiration for
   text blinking effect by Alan Dunning:
   https://codepen.io/alandunning/pen/RWRrEW
   */
 
 
-
-
-  @media only screen and (max-width: 900px) {
-    .wrapper {
-        width: 80%;
-        margin: 5% auto;
-    }
-
-}
-#musicIFRAME{
+#musicIFRAME {
+    position: absolute;
     display: block;
+    left: 0;
+    margin-top: 500px;
 }
-#PCmonitorInside{
-    border: 2px solid rgb(0,166,0);
+
+#PCmonitor {
+    margin-top: 67px;
+    margin-left: 33px;
+
+}
+
+#PCmonitorInside {
+    border: 2px solid rgb(0, 166, 0);
     width: 806px;
     height: 568px;
     background-color: black;
     margin: 50px auto;
     position: relative;
+    border-radius: 20px;
 }
-#PCmonitorOutside{
-    border: 2px solid rgb(0,166,0);
+
+#PCmonitorOutside {
+    border: 2px solid rgb(0, 166, 0);
     width: 967px;
     height: 682px;
     background-color: black;
     margin: auto auto auto 10px;
     display: inline-block;
+    border-radius: 4px;
 }
+
+#PCmonitorOutsideOutside {
+    border: 2px solid rgb(0, 166, 0);
+    width: 992px;
+    height: 702px;
+    background-color: black;
+    padding-top: 10px;
+    margin: 10px auto auto 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/*
+#PCmonitorTopLeftEdge{
+    border: 1px solid rgb(0,166,0);
+    transform:rotate(-15deg) translate(9px, 2px);
+    width: 100px;
+    
+}
+#PCmonitorTopRightEdge{
+    border: 1px solid rgb(0,166,0);
+    transform:rotate(-345deg) translate(872px, -237px);
+    width: 100px;
+    position: absolute;
+
+
+}
+*/
+#PCmonitorBottomLeftEdge {
+    border: 1px solid rgb(0, 166, 0);
+    display: absolute;
+    transform: rotate(91deg) translate(31px, 13px);
+    /*20, 14 */
+    width: 50px;
+    border-radius: 100%;
+}
+
+#PCmonitorBottomRightEdge {
+    border: 1px solid rgb(0, 166, 0);
+    position: absolute;
+    left: 1019px;
+    top: 825px;
+    transform: rotate(91deg);
+    width: 50px;
+    border-radius: 100%;
+}
+
+#PCmonitorBottomUpperEdge {
+    border: 1px solid rgb(0, 166, 0);
+    width: 991px;
+    position: absolute;
+    left: 53px;
+    border-radius: 3px;
+}
+
+#PCmonitorBottomUpperBottomEdge {
+    border: 1px solid rgb(0, 166, 0);
+    width: 991px;
+    position: absolute;
+    left: 52px;
+    border-radius: 3px;
+}
+
+#commodoreLogoBox {
+    border: 1px solid rgb(0, 166, 0);
+    width: 250px;
+    height: 44px;
+    position: absolute;
+    left: 386px;
+}
+
+#commodore64Text {
+    text-align: center;
+    margin-top: 11px;
+    font-size: 1.0rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#powerButton {
+    border: 1px solid rgb(0, 166, 0);
+    width: 26px;
+    height: 26px;
+    position: relative;
+    left: 946px;
+    top: 5px;
+}
+
+#powerButtonText {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    left: 947px;
+    top: 5px;
+    font-size: .5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#PCmonitorBottomBottomBottom {
+    border: 1px solid rgb(0, 166, 0);
+    width: 991px;
+    height: 75px;
+    position: absolute;
+    top: 808px;
+    /*67, 33 orig: 741  check.*/
+    left: 52px;
+    margin-top: 45px;
+    border-radius: 4px;
+}
+
+#PCmonitorBottomBottomBottomBottom {
+    border: 1px solid rgb(0, 166, 0);
+    width: 956px;
+    height: 32px;
+    position: relative;
+    top: 25px;
+    /* 25, 27 check */
+    left: 27px;
+    margin-top: 45px;
+    border-radius: 5px;
+
+}
+
 .row {
     display: flex;
 }
 
 .column1 {
-    flex: 80%;
+    display: block;
+    width: 40%;
+
+
 }
+
 .column2 {
-    flex: 20%;
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 0;
+
 }
-#keyboard{
-    border-top: solid rgb(0,166,0) 2px;
-    border-bottom: solid rgb(0,166,0) 2px;
-    height : 400px;
-    width: 967px;
-    margin: 50px auto auto 10px;
-    display: inline-block;
-}
+
+/**
 #triangle-bottomright { 
     width: 0; 
     height: 0; 
     margin: 0;
+    margin-top: 100px;
     padding: 0;
     border-bottom: 100px solid rgb(0,166,0); 
     border-left: 100px solid transparent; 
@@ -128,7 +278,119 @@ h1,h2,h3,h4{
     border-right: 100px solid transparent; 
     display: absolute;
     position: absolute;
-    left: 1038;
-    top: 999;
+    left: 1350;
+    top: 1049;
     transform: scale(.125, 4.1);
+}
+**/
+#aboutText {}
+
+#keyboard {
+    border: solid rgb(0, 166, 0) 1px;
+    height: 415px;
+    width: 1035px;
+    position: absolute;
+    top: 860px;
+    left: 18px;
+    margin: 150px auto auto 10px;
+
+    display: inline-block;
+}
+
+#keyboardKeys {
+    position: absolute;
+    left: 38px;
+    top: 1020px;
+
+}
+
+.keyboardKey,
+.keyboardFKey {
+    font-size: 2.2rem;
+    border: 1px solid rgb(0, 166, 0);
+    margin: 0px;
+    padding: 0px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 1px;
+
+}
+
+.keyboardFKey {
+    margin-bottom: 15px;
+}
+
+#SpaceBarKey {
+    width: 428px;
+    max-width: 500px;
+}
+
+#F1throughF4keys {
+    margin-left: 35px;
+    padding: 0 0 0 0;
+}
+
+#F5throughF8keys {
+    margin-left: 20px;
+
+}
+
+#F9throughF12keys {
+    margin-left: 20px;
+}
+
+.BackspaceKey {
+    max-width: 60px;
+    width: 60px;
+}
+
+.TabKey {
+    max-width: 60px;
+    width: 60px;
+}
+
+.EscapeKey {
+    padding-right: 10px;
+}
+
+.EnterKey {
+    width: 93px;
+    max-width: 93px;
+}
+
+.CapsKey {
+    width: 90px;
+    max-width: 90px;
+}
+
+.shiftKey {
+    width: 128px;
+    max-width: 128px;
+}
+
+.CtrlKey {
+    width: 86px;
+    max-width: 86px;
+}
+
+.AltKey {
+    width: 86px;
+    max-width: 86px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .column1 {
+        display: block;
+
+    }
+
+    .column2 {
+        display: none;
+
+    }
 }
