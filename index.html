@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" async>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" async>
     <script src="main.js"></script>
+    <script src="jquery-1.9.1.min.js"></script>
+
 </head>
 
 <body>
@@ -23,7 +25,8 @@
 
                     <div id="PCmonitorInside">
 
-                        <h2 id="designerName">VT323@PeterHull:~$<span class="blink">_</span></h2>
+                        <p id="designerName">VT323@PeterHull:~$</p>
+                        <p id="fontDemoArea"></p><span class="blink">_</span>
 
                     </div>
                 </div>
@@ -180,27 +183,35 @@
 -->
     <div class="column2">
         <!--Font Name-->
-        <h1 id="fontName">VT323</h1>
+        <h1 id="fontName">V</h1><h1 id="fontName">T</h1><h1 id="fontName">3</h1><h1 id="fontName">2</h1><h1 id="fontName">3</h1>
         <h3>Designer: Peter Hull</h3>
         <h3 id="fontClassification">Classification: m o n o s p a c e</h3>
         <!--About text from google fonts-->
         <div id="aboutText">
-        <p>This font was created from the glyphs of the DEC VT320 text terminal, which [Peter Hull] used in college,
-            and for which [Peter Hull has] retained an unaccountable nostalgia.</p>
+            <p>This font was created from the glyphs of the DEC VT320 text terminal, which [Peter Hull] used in
+                college,
+                and for which [Peter Hull has] retained an unaccountable nostalgia.</p>
 
-        <p>[Peter Hull] used a variety of tools, including Gimp, Python/PIL, and of course, FontForge. The VT320 glyphs
-            were designed with a nonrectangular pixel aspect ratio to fit the way the terminal scanned the CRT, so for
-            this VT323 variation [Peter Hull] had Python munge the locations and attempt to emulate the way the
-            electron beam actually illuminated the phosphor and smeared the pixels horizontally on the terminal's CRT,
-            so it looks more like what the actual glyph looked like on the screen. Python then drew the proper pixels
-            into a 1:1 pixel grid as a monochrome PNG, which FontForge autoscanned into outlines. [Peter Hull has]
-            attempted to support most of the glyphs available on the VT320, but that is a limited set to begin with, so
-            please don't be disappointed that [Peter Hull hasn't] supported Esperanto or Riograndenser Hunsrückisch or
-            whatever.</p>
+            <p>[Peter Hull] used a variety of tools, including Gimp, Python/PIL, and of course, FontForge. The VT320
+                glyphs
+                were designed with a nonrectangular pixel aspect ratio to fit the way the terminal scanned the CRT, so
+                for
+                this VT323 variation [Peter Hull] had Python munge the locations and attempt to emulate the way the
+                electron beam actually illuminated the phosphor and smeared the pixels horizontally on the terminal's
+                CRT,
+                so it looks more like what the actual glyph looked like on the screen. Python then drew the proper
+                pixels
+                into a 1:1 pixel grid as a monochrome PNG, which FontForge autoscanned into outlines. [Peter Hull has]
+                attempted to support most of the glyphs available on the VT320, but that is a limited set to begin
+                with, so
+                please don't be disappointed that [Peter Hull hasn't] supported Esperanto or Riograndenser Hunsrückisch
+                or
+                whatever.</p>
 
-        <p>There is another earlier variation called "VT321" that uses a more standard 1:1 pixel drawing technique, if
-            you want to grab that as well. [Peter Hull] personally like[d] VT323 better, and actually use[d] it as
-            [his] terminal font when cruising on the command line.</p>
+            <p>There is another earlier variation called "VT321" that uses a more standard 1:1 pixel drawing technique,
+                if
+                you want to grab that as well. [Peter Hull] personally like[d] VT323 better, and actually use[d] it as
+                [his] terminal font when cruising on the command line.</p>
         </div>
     </div>
 
@@ -209,6 +220,45 @@
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/9556598&color=%2371c46c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
         </div>
         -->
+    <script>
+        $(document).ready(function () {
+            //power button
+            //display none using toggle
+
+     var counter = 0;
+// counter % 40 characters, then insert \n
+
+//if counter % 360 == 0, then run a function that informs the user that they
+//have entered the limit and clear the text
+
+
+//function to invert the color of keys pressed when each
+//key is called
+
+//function to play a "click" sound when each key is pressed
+
+            document.addEventListener('keydown', function (event) {
+                if (event.keyCode == 65) {
+                    if(counter % 40 == 0){
+                        $("#fontDemoArea").append("<span>\ra</span>");
+                        counter +=1;
+                    }
+                    else{
+                        $("#fontDemoArea").append("<span>a</span>");
+                        counter +=1;
+                    }
+                } else if (event.keyCode == 39) {
+                    alert('Right was pressed');
+                }
+            });
+
+
+            $("input").on("keydown keypress", keyHandler);
+
+
+
+        });
+    </script>
 </body>
 
 </html>

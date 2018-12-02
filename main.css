@@ -27,8 +27,9 @@ h4 {
 #fontName {
     font-size: 20rem;
     display: inline-block;
-    z-index: 3;
     background: black;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 #designerName {
@@ -143,9 +144,9 @@ h4 {
 #PCmonitorBottomLeftEdge {
     border: 1px solid rgb(0, 166, 0);
     display: absolute;
-    transform: rotate(91deg) translate(31px, 13px);
+    transform: rotate(91deg) translate(32px, 13px);
     /*20, 14 */
-    width: 50px;
+    width: 51px;
     border-radius: 100%;
 }
 
@@ -173,6 +174,7 @@ h4 {
     position: absolute;
     left: 52px;
     border-radius: 3px;
+    margin-top: 48px;
 }
 
 #commodoreLogoBox {
@@ -240,17 +242,27 @@ h4 {
 
 .column1 {
     display: block;
-    width: 40%;
+    width: 50%;
 
 
 }
 
 .column2 {
-    position: absolute;
-    width: 40%;
-    right: 0;
+    display: block;
+    position: inherit;
+    max-width: 75ch;
+    margin-left: 1120px;
+    margin-top: -928px;
+    margin-right: 50px;
     top: 0;
+    
+    
 
+}
+.column2 p {
+    
+    max-width: 75ch;
+    margin: 0;
 }
 
 /**
@@ -383,7 +395,7 @@ h4 {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1080px) {
     .column1 {
         display: block;
 
@@ -393,4 +405,16 @@ h4 {
         display: none;
 
     }
+}
+
+#areaForText{
+    background-color: black;
+}
+#PCmonitorInside p{
+    display: inline;
+}
+.letter{
+    display: block;
+    position: relative;
+    
 }
